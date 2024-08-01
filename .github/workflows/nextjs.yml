@@ -62,6 +62,7 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Build TinaCMS
         env:
+          NEXT_PUBLIC_TINA_BRANCH: ${{ env.GITHUB_REF_NAME }}
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: yarn build
