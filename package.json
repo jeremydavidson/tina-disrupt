@@ -9,7 +9,8 @@
     "start": "tinacms build && next start",
     "export": "npm run build && next export",
     "lint": "next lint",
-    "dev:build": "next build"
+    "dev:build": "next build",
+    "tinacms": "tinacms"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
