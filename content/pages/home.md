@@ -1,9 +1,9 @@
 ---
 title: Tina Cloud Starter
 blocks:
-  - headline: Welcome
+  - headline: Welcome to the Tina Starter
     text: >
-      ## Editors
+      ## **Editors**
 
 
       **Click this box to start editing it**. You will see the matching field

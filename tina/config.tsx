@@ -22,13 +22,11 @@ const config = defineConfig({
     tina: {
       publicFolder: "public",
       mediaRoot: "uploads",
-      // static: true,
     },
   },
   build: {
-    publicFolder: "public",
-    outputFolder: "admin",
-    basePath: 'tina-disrupt',
+    publicFolder: "public", // The public asset folder for your framework
+    outputFolder: "admin", // within the public folder
   },
   schema: {
     collections: [Page, Post, Author, Global],
