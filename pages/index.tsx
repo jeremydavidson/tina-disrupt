@@ -1,16 +1,15 @@
 /* eslint-disable no-unused-vars */
-import { GetStaticProps } from 'next';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 function HomePage() {
-  // This component won't be used for rendering
-}
+  const router = useRouter();
 
-export const getStaticProps: GetStaticProps = async () => {
-  return {
-    props: {
-      filename: "home"
-    }
-  };
-};
+  useEffect(() => {
+    router.replace('/home'); // Redirect immediately
+  }, [router]);
+
+  return null; // No content to render
+}
 
 export default HomePage;
