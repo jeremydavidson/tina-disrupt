@@ -28,7 +28,6 @@ const config = defineConfig({
   build: {
     publicFolder: "public",
     outputFolder: "admin",
-    basePath: 'https://jeremydavidson.github.io/tina-disrupt',
   },
   schema: {
     collections: [Page, Post, Author, Global],
