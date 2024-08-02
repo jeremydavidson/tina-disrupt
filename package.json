@@ -28,7 +28,7 @@
   "dependencies": {
     "@headlessui/react": "^2.1.1",
     "@tailwindcss/typography": "^0.5.8",
-    "@tinacms/cli": "^1.5.34",
+    "@tinacms/cli": "^1.5.52",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.1",
     "date-fns": "^3.6.0",
@@ -40,7 +40,7 @@
     "styled-jsx": "^5.1.1",
     "tailwind-merge": "^2.3.0",
     "tailwindcss": "^3.2.4",
-    "tinacms": "^1.6.4",
+    "tinacms": "^2.1.0",
     "typescript": "^5.5.3"
   },
   "resolutions": {
