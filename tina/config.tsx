@@ -26,8 +26,9 @@ const config = defineConfig({
     },
   },
   build: {
-    publicFolder: "public", // The public asset folder for your framework
-    outputFolder: "admin", // within the public folder
+    publicFolder: "public",
+    outputFolder: "admin",
+    basePath: "/admin",
   },
   schema: {
     collections: [Page, Post, Author, Global],
