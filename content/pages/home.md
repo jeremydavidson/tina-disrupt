@@ -33,15 +33,13 @@ blocks:
           color: primary
           style: float
         title: This Is a Feature
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.
+        text: Another feature
       - icon:
           name: BiPalette
           color: green
           style: float
-        title: Configurable Theme
-        text: >-
-          Edit global theme configuration with Tina. Change your theme's primary
-          color, font, or icon set.
+        title: Something else
+        text: ''
     color: tint
     _template: features
   - quote: >-
