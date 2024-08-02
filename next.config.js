@@ -1,6 +1,7 @@
 module.exports = {
   output: "export",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -18,16 +19,16 @@ module.exports = {
 
     return config;
   },
-  async rewrites() {
-    return [
-      {
-        source: "/",
-        destination: "/home",
-      },
-      {
-        source: "/admin",
-        destination: "/admin/index.html",
-      },
-    ];
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/home",
+  //     },
+  //     {
+  //       source: "/admin",
+  //       destination: "/admin/index.html",
+  //     },
+  //   ];
+  // },
 };
