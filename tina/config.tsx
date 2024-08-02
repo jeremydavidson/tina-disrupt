@@ -28,6 +28,7 @@ const config = defineConfig({
   build: {
     publicFolder: "public",
     outputFolder: "admin",
+    basePath: 'tina-disrupt',
   },
   schema: {
     collections: [Page, Post, Author, Global],
