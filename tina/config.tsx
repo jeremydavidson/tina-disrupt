@@ -28,7 +28,6 @@ const config = defineConfig({
   build: {
     publicFolder: "public",
     outputFolder: "admin",
-    basePath: "/admin",
   },
   schema: {
     collections: [Page, Post, Author, Global],

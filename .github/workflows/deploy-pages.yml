@@ -32,10 +32,10 @@ jobs:
           node-version: '20'
           cache: 'yarn'
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v5
+      #   with:
+      #     static_site_generator: next
 
       - name: Install Dependencies
         run: yarn --frozen-lockfile
