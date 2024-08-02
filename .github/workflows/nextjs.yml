@@ -4,7 +4,7 @@ name: Deploy Next.js site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["none"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -101,7 +101,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_REPO_TOKEN }}
-          # publish_dir: ./out
+          publish_dir: ./out
           # cname: ${{ secrets.CNAME }}
           enable_jekyll: false
           keep_files: true
