@@ -39,13 +39,6 @@ jobs:
 
       - name: Install Dependencies
         run: yarn --frozen-lockfile
-
-      - name: Build for Production
-        env:
-          NEXT_PUBLIC_TINA_BRANCH: ${{ github.ref_name }}
-          NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
-          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-        run: yarn build
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -58,8 +51,12 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Build for Production
+        env:
+          NEXT_PUBLIC_TINA_BRANCH: ${{ github.ref_name }}
+          NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+        run: yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
