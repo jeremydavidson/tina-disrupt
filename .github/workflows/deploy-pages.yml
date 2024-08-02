@@ -74,6 +74,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build TinaCMS
         env:
+          IS_PATH_DEPLOY: true
+          PATH_NAME: ${{ github.event.repository.name }}
           NEXT_PUBLIC_TINA_BRANCH: ${{ github.ref_name }}
           NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}

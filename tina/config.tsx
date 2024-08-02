@@ -28,7 +28,7 @@ const config = defineConfig({
   build: {
     publicFolder: "public",
     outputFolder: "admin",
-    basePath: 'tina-disrupt',
+    basePath: process.env.IS_PATH_DEPLOY ? '' : process.env.PATH_NAME,
   },
   schema: {
     collections: [Page, Post, Author, Global],
