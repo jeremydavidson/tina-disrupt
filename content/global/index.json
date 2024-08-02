@@ -5,9 +5,13 @@
       "color": "orange",
       "style": "float"
     },
-    "name": "Tina Starter",
+    "name": " Disrupt Dev",
     "color": "default",
     "nav": [
+      {
+        "href": "index",
+        "label": "Index"
+      },
       {
         "href": "",
         "label": "Home"
