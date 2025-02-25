@@ -9,10 +9,6 @@
     "color": "default",
     "nav": [
       {
-        "href": "index",
-        "label": "Index"
-      },
-      {
         "href": "",
         "label": "Home"
       },
